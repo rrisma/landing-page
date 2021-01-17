@@ -1,0 +1,108 @@
+.mars {
+    background-image: url('../../img/img-background.png');
+    height: 100vh;
+    // background-repeat: repeat-x;
+    background-color: $black;
+    width: 100%;
+    // background-position: center;
+}
+.section-head {
+   
+    .mars-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mars-desc:nth-child(2) {
+        width: 50%;
+    }
+    .mars-desc {
+        // width: 33.333333%;
+        
+        width: 25%;
+        .line {
+            text-align: center;
+            border: 1px solid #2E374A;
+            border-radius: 50%;
+            position: absolute;
+            -webkit-animation: spin-right 10s linear infinite;
+            -moz-animation: spin-right 10s linear infinite;
+            -ms-animation: spin-right 10s linear infinite;
+            -o-animation: spin-right 10s linear infinite;
+            animation: spin-right 10s linear infinite;
+            &.line-1 {
+                top: 8.9%;
+                left: 16.7%;
+                right: 0;
+                bottom: 0;
+                width: 428px;
+                height: 428px;
+            }
+            &.line-2 {
+                top: 14.2%;
+                left: 19.2%;
+                right: 0;
+                bottom: 0;
+                width: 390px;
+                height: 390px;
+            }
+            &.line-3 {
+                top: 20%;
+                left: 23%;
+                right: 0;
+                bottom: 0;
+                width: 340px;
+                height: 340px;
+            }
+
+            .steroid {
+                position: relative;
+                animation: spin 12s linear 0s infinite;
+                .img-3{
+                  
+                    position: absolute;
+                }
+                @keyframes spin {
+                    from {
+                        transform: rotate(0);
+                    }
+                    to {
+                        transform: rotate(359deg);
+                    }
+                    
+                }
+            }
+        }
+    
+        &-card {
+            @include background-card();
+            .text{
+                color: $color-grey;
+                font-family: Poppins;
+                &-line {
+                    font-family: Poppins;
+                    color: $color-pink;
+                }
+            }
+        }
+    }
+    .mars-img {
+        text-align: center;
+        position: relative;
+        padding-top: 104px;
+        .images {
+            width: 300px;
+        }
+    }
+    .mars-line {
+        .text {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            color: $color-text-line;
+            .red{
+                color: $text-line;
+            }
+        }
+    }
+}
