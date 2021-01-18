@@ -314,6 +314,19 @@
   left: 50%;
   top: 20px;
   z-index: 1;
+  animation: bounce 0.5s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate3d(0px, 0px, 0);
+  }
+  50% {
+    transform: translate3d(0px, -4px, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0);
+  }
 }
 
 .section-content .mars-rockets .images-line {
@@ -331,6 +344,19 @@
   left: 50%;
   top: -52px;
   transform: rotate(60deg);
+  animation: bounces .5s infinite;
+}
+
+@keyframes bounces {
+  0% {
+    transform: translate(-10%, -10%) rotate(60deg) translate(0, 0);
+  }
+  50% {
+    transform: translate(-10%, -10%) rotate(60deg) translate(-5px, -5px);
+  }
+  100% {
+    transform: translate(-10%, -10%) rotate(60deg) translate(0, 0);
+  }
 }
 
 .section-content .mars-content .mars-rocket .images-line {
