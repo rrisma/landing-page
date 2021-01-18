@@ -1,12 +1,26 @@
-$color-green :#4B5D67;
-$color-white :#ffff;
-$color-pink  : #CE7645;
-$color-grey  : #C5C5C5;
-$color-black : #2E374A;
-$black       : #000000;
-$text-line : #84142D;
-$color-text-line :#4B5D67;
-$colors: linear-gradient(180deg, #121223 0%, rgba(18, 18, 35, 0.5) 100%);;
+$color-01 :#4B5D67;
+$color-02 :#ffff;
+$color-03 :#CE7645;
+$color-04 :#C5C5C5;
+$color-05 :#2E374A;
+$color-06 :#000000;
+$color-07 :#84142D;
+$color-08 :#4B5D67;
+$color-09 :#C2C2C2;
+$colors-01 :#8E8E8E;
+$colors-02 :#373737;
+$colors-03 :#A7A7A7;
+$colors-04 :#121223;
+
+$font-size-01 : 12px;
+$font-size-02 : 15px;
+$font-size-03 : 18px;
+$font-size-04 : 20px;
+$font-size-05 : 25px;
+$font-size-06 : 30px;
+$font-size-07 : 130px;
+$font-size-08 : 160px;
+
 @mixin background-card {
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
@@ -15,13 +29,10 @@ $colors: linear-gradient(180deg, #121223 0%, rgba(18, 18, 35, 0.5) 100%);;
     border-radius: 0 35px 35px 0;
 }
 @mixin card-slide {
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
 }
-@mixin footer {
-    background: linear-gradient(180deg, #121223 0%, rgba(18, 18, 35, 0.5) 100%);
-}
+
 @mixin button-primary {
     background: linear-gradient(180deg, #FFAB6F 0%, #FF002E 100%);
     box-shadow: 0px 9px 20px rgba(255, 0, 0, 0.3);

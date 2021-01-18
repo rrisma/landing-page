@@ -1,7 +1,7 @@
 .section-footer {
     .mars-footer {
         // background: linear-gradient(180deg, #121223 0%, rgba(18, 18, 35, 0.5) 100%);
-        border-bottom: 45px solid #121223;
+        border-bottom: 45px solid $colors-04;
         border-left: 50px solid transparent;
         border-right: 50px solid transparent;
         height: 0;
@@ -9,16 +9,12 @@
         
         .text {
             padding-top: 12px;
-            padding-bottom: 12px;
+            line-height: 9px;
             font-family: Poppins;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-
-text-align: center;
-letter-spacing: 0.01em;
-
-color: #C2C2C2;
+            font-size: $font-size-03;
+            text-align: center;
+            letter-spacing: 0.01em;
+            color: $color-09;
         }
     }
 }
