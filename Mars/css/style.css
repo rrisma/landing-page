@@ -244,12 +244,20 @@
 
 .section-head .mars-desc .lines:nth-child(2) {
   position: absolute;
+  left: 32%;
+  z-index: 1;
+  top: -21%;
+  border: 2px solid #2E374A;
+  height: 480px;
+}
+
+.section-head .mars-desc .lines:nth-child(3) {
+  position: absolute;
   left: 42%;
   z-index: 1;
   top: -16%;
   border: 2px solid #2E374A;
   height: 440px;
-  opacity: 0.3;
 }
 
 .section-head .mars-desc-card {
@@ -258,6 +266,7 @@
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
   border-radius: 0 35px 35px 0;
+  background-color: #0e121a;
   width: 276px;
   padding: 30px 21px;
   position: relative;
@@ -302,7 +311,7 @@
 
 .section-content {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 
 .section-content .mars-rockets {
@@ -470,10 +479,15 @@
 .section-content .mars-content-inside .mars-inside-card .inside-card {
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 0 35px 35px 0;
+  background-color: #0e121a;
   border-radius: 35px 0px 0px 35px;
   width: 346px;
   padding: 31px 32px 21px 32px;
   z-index: 2;
+  position: relative;
 }
 
 .section-content .mars-content-inside .mars-inside-card .inside-card .quest {
@@ -495,6 +509,24 @@
 .section-content .mars-content-inside .mars-inside-card .inside-card .text-line {
   font-family: Poppins;
   color: #CE7645;
+}
+
+.section-content .mars-content-inside .mars-inside-card .lines:nth-child(2) {
+  position: absolute;
+  right: 32%;
+  z-index: 1;
+  top: -31%;
+  border: 2px solid #2E374A;
+  height: 420px;
+}
+
+.section-content .mars-content-inside .mars-inside-card .lines:nth-child(3) {
+  position: absolute;
+  right: 42%;
+  z-index: 1;
+  top: -20%;
+  border: 2px solid #2E374A;
+  height: 380px;
 }
 
 .section-content .mars-content-insider {
@@ -526,7 +558,7 @@
   content: '';
   position: absolute;
   border: 1px solid #A7A7A7;
-  left: 26%;
+  left: 1%;
   width: 38%;
   display: block;
   border-bottom: 4px solid rgba(117, 127, 149, 0.5);
@@ -564,7 +596,13 @@
   padding: 31px 32px 21px 32px;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 0 35px 35px 0;
+  background-color: #0e121a;
   border-radius: 0px 35px 35px 0px;
+  position: relative;
+  z-index: 2;
 }
 
 .section-content .mars-content-insider .mars-inside-card .inside-card .quest {
@@ -588,6 +626,24 @@
   color: #CE7645;
 }
 
+.section-content .mars-content-insider .mars-inside-card .lines:nth-child(2) {
+  position: absolute;
+  left: 32%;
+  z-index: 1;
+  top: -35%;
+  border: 2px solid #2E374A;
+  height: 420px;
+}
+
+.section-content .mars-content-insider .mars-inside-card .lines:nth-child(3) {
+  position: absolute;
+  left: 42%;
+  z-index: 1;
+  top: -25%;
+  border: 2px solid #2E374A;
+  height: 380px;
+}
+
 .section-footer .mars-footer {
   border-bottom: 45px solid #121223;
   border-left: 50px solid transparent;
@@ -604,5 +660,10 @@
   text-align: center;
   letter-spacing: 0.01em;
   color: #C2C2C2;
+}
+
+.section-footer .mars-footer .designed {
+  text-transform: capitalize;
+  font-family: Poppins;
 }
 /*# sourceMappingURL=style.css.map */

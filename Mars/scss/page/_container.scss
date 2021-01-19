@@ -152,16 +152,24 @@
 
         .lines:nth-child(2) {
             position: absolute;
+            left: 32%;
+            z-index: 1;
+            top: -21%;
+            border: 2px solid $color-05;
+            height: 480px;
+        }
+        .lines:nth-child(3) {
+            position: absolute;
             left: 42%;
             z-index: 1;
             top: -16%;
             border: 2px solid $color-05;
             height: 440px;
-            opacity: 0.3;
         }
 
         &-card {
             @include background-card();
+            background-color: #0e121a;
             width: 276px;
             padding: 30px 21px;
             position: relative;

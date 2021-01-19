@@ -1,6 +1,6 @@
 .section-content {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     .mars-rockets {
         position: relative;
         .images-rocket {
@@ -154,12 +154,13 @@
                 position: relative;
                 .inside-card {
                     // @include background-card();
-                    background: rgba(255, 255, 255, 0.05);
-                    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+                    @include background-card();
+                    background-color: #0e121a;
                     border-radius: 35px 0px 0px 35px;
                     width: 346px;
                     padding: 31px 32px 21px 32px;
                     z-index: 2;
+                    position: relative;
                     .quest {
                         position: absolute;
                         top: 45%;
@@ -178,6 +179,22 @@
                             color: $color-03;
                         }
                     }
+                }
+                .lines:nth-child(2) {
+                    position: absolute;
+                    right: 32%;
+                    z-index: 1;
+                    top: -31%;
+                    border: 2px solid $color-05;
+                    height: 420px;
+                }
+                .lines:nth-child(3) {
+                    position: absolute;
+                    right: 42%;
+                    z-index: 1;
+                    top: -20%;
+                    border: 2px solid $color-05;
+                    height: 380px;
                 }
             }
         }
@@ -207,7 +224,7 @@
                             content: '';
                             position: absolute;
                             border: 1px solid $colors-03;
-                            left: 26%;
+                            left: 1%;
                             width: 38%;
                             display: block;
                             border-bottom:  4px solid rgba(117, 127, 149, 0.5);
@@ -241,9 +258,11 @@
                 .inside-card {
                     width: 346px;
                     padding: 31px 32px 21px 32px;
-                    background: rgba(255, 255, 255, 0.05);
-                    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+                    @include background-card();
+                    background-color: #0e121a;
                     border-radius: 0px 35px 35px 0px;
+                    position: relative;
+                    z-index: 2;
                     .quest {
                         position: absolute;
                         top: 45%;
@@ -262,6 +281,22 @@
                             color: $color-03;
                         }
                     }
+                }
+                .lines:nth-child(2) {
+                    position: absolute;
+                    left: 32%;
+                    z-index: 1;
+                    top: -35%;
+                    border: 2px solid $color-05;
+                    height: 420px;
+                }
+                .lines:nth-child(3) {
+                    position: absolute;
+                    left: 42%;
+                    z-index: 1;
+                    top: -25%;
+                    border: 2px solid $color-05;
+                    height: 380px;
                 }
             }
         }
